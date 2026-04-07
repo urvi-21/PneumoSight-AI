@@ -9,7 +9,7 @@ MODEL_PATH = "models/pneumonia_model.keras"
 def download_model():
     if not os.path.exists(MODEL_PATH):
         os.makedirs("models", exist_ok=True)
-        url = "https://drive.google.com/file/d/1RAe7YQ9chy-nq8wvHoxk2aMM2Hhy62tT/view?usp=sharing"
+        url = "https://drive.google.com/file/d/1RAe7YQ9chy-nq8wvHoxk2aMM2Hhy62tT"
         gdown.download(url, MODEL_PATH, quiet=False)
 
 model = None
