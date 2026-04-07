@@ -68,6 +68,7 @@ PneumoSight AI automates pneumonia detection and enhances decision-making by com
 ---
 
 ## 🏗️ System Architecture
+```
 User Upload (X-ray)
 ↓
 Deep Learning Model (Xception)
@@ -79,7 +80,7 @@ Risk Analysis Engine
 Grad-CAM Visualization
 ↓
 AI Radiology Report (LLM)
-
+```
 
 
 ---
@@ -104,34 +105,24 @@ AI Radiology Report (LLM)
 ---
 
 ## 📁 Project Structure
-pneumosight-ai/
-│
-├── app/
-│ └── app.py
-│
-├── utils/
-│ ├── inference.py
-│ ├── gradcam.py
-│ ├── analysis.py
-│
-├── agent/
-│ └── explainer.py
-│
-├── requirements.txt
-└── README.md
-pneumosight-ai/
-│
-├── app/
-│ └── app.py
-│
-├── utils/
-│ ├── inference.py
-│ ├── gradcam.py
-│ ├── analysis.py
-│
-├── agent/
-│ └── explainer.py
-│
-├── requirements.txt
-└── README.md
 
+```
+PneumoSight-AI/
+│
+├── app/
+│   └── app.py                # Streamlit frontend
+│
+├── utils/
+│   ├── inference.py         # Model loading & prediction
+│   ├── gradcam.py           # Grad-CAM visualization
+│   ├── analysis.py          # Risk & confidence logic
+│
+├── agent/
+│   └── explainer.py         # AI radiology report generator
+│
+├── models/                  # Model downloaded at runtime (not in repo)
+│
+├── requirements.txt         # Dependencies
+├── .gitignore               # Ignored files
+└── README.md                # Project documentation
+```
