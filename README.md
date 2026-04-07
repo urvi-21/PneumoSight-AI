@@ -7,7 +7,7 @@ PneumoSight AI is an end-to-end deep learning system that detects pneumonia from
 ---
 
 ## 🚀 Live Demo
-👉 [Add your deployed app link here]
+ [https://pneumosight-ai-fppfy4jpx5hls4qn7lqsqq.streamlit.app/]
 
 ---
 
