@@ -6,21 +6,17 @@ import os
 import gdown
 
 MODEL_PATH = "models/pneumonia_model.keras"
+
 def download_model():
-    if not os.path.exists(MODEL_PATH):
-        os.makedirs("models", exist_ok=True)
-        url = "https://drive.google.com/file/d/1RAe7YQ9chy-nq8wvHoxk2aMM2Hhy62tT"
+    url = "https://drive.google.com/uc?id=1RAe7YQ9chy-nq8wvHoxk2aMM2Hhy62tT"
+
+    if not os.path.exists(MODEL_PATH) or os.path.getsize(MODEL_PATH) < 10000000:
+        print("Downloading model...")
         gdown.download(url, MODEL_PATH, quiet=False)
 
-model = None
-
 def load_model():
-    global model
-    if model is None:
-        download_model()
-        model = tf.keras.models.load_model(MODEL_PATH, compile=False)
-    return model
-
+    download_model()
+    return tf.keras.models.load_model(MODEL_PATH, compile=False)
 def preprocess(img):
     if isinstance(img, np.ndarray):
         img = Image.fromarray(img)
