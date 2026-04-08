@@ -6,11 +6,6 @@ PneumoSight AI is an end-to-end deep learning system that detects pneumonia from
 
 ---
 
-## 🚀 Live Demo
- [https://pneumosight-ai-fppfy4jpx5hls4qn7lqsqq.streamlit.app/]
-
----
-
 ## 🧩 Problem
 
 Pneumonia is a serious respiratory condition requiring early and accurate diagnosis.  
@@ -110,19 +105,19 @@ AI Radiology Report (LLM)
 PneumoSight-AI/
 │
 ├── app/
-│   └── app.py                # Streamlit frontend
+│   └── app.py                
 │
 ├── utils/
-│   ├── inference.py         # Model loading & prediction
-│   ├── gradcam.py           # Grad-CAM visualization
-│   ├── analysis.py          # Risk & confidence logic
+│   ├── inference.py         
+│   ├── gradcam.py          
+│   ├── analysis.py         
 │
 ├── agent/
-│   └── explainer.py         # AI radiology report generator
+│   └── explainer.py         
 │
-├── models/                  # Model downloaded at runtime (not in repo)
+├── models/                  
 │
-├── requirements.txt         # Dependencies
-├── .gitignore               # Ignored files
-└── README.md                # Project documentation
+├── requirements.txt         
+├── .gitignore               
+└── README.md                
 ```
