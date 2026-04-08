@@ -99,6 +99,16 @@ AI Radiology Report (LLM)
 
 ---
 
+## Demo
+
+│<img width="573" height="753" alt="Screenshot 2026-04-08 180943" src="https://github.com/user-attachments/assets/708dc196-bd89-449e-ad4d-accbea65d2b5" />
+
+<img width="523" height="724" alt="Screenshot 2026-04-08 180929" src="https://github.com/user-attachments/assets/133cb8a8-c75a-4457-91b9-0c7193685e4a" />
+
+
+---
+
+
 ## 📁 Project Structure
 
 ```
